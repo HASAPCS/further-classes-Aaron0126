@@ -6,7 +6,14 @@ public class Passenger {
 
     public Passenger(String name, String passportNumber) {
         // TODO: Initialize the attributes
+        this.name=name;
+        this.passportNumber=passportNumber;
     }
-
+    public String getName(){
+        return name;
+    }
+    public String getPassportNumber(){
+        return passportNumber;
+    }
     // TODO: Implement getters, setters, and any other methods you find necessary
 }
