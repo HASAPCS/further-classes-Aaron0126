@@ -18,4 +18,11 @@ public class ShoppingCart {
     public void removeProduct(Product product) {
         productsList.remove(product);
     }
-}
+    public double totalCost(){
+        double cost=0;
+        for (Product product: productsList){
+                cost +=product.getPrice();
+            }
+        return cost;
+        }
+    }
